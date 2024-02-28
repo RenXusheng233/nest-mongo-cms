@@ -8,7 +8,7 @@ export const LOGGER_OPTIONS: WinstonModuleOptions = {
       level: 'info',
       format: format.combine(
         format.ms(),
-        utilities.format.nestLike('Nest-Ollama', {
+        utilities.format.nestLike('Ollama', {
           colors: true,
           prettyPrint: true,
         }),
