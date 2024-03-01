@@ -6,6 +6,8 @@ import { AppService } from './app.service';
 import { LOGGER_OPTIONS } from './common/logger';
 import { CatModule } from './modules/cat/cat.module';
 import { DogModule } from './modules/dog/dog.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { UserModule } from './modules/user/user.module';
 
 @Module({
   imports: [
@@ -13,6 +15,8 @@ import { DogModule } from './modules/dog/dog.module';
     MongooseModule.forRoot('mongodb://localhost:27017/ollama'),
     CatModule,
     DogModule,
+    AuthModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
